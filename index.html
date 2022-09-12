@@ -4,23 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Photo app</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!--css подключается после tag title согласно спецификации-->
   </head>
   <body>
-    <header>
+    <header class="page-header">
       <nav>
-        <a href="./index.html">
+        <a href="./index.html" class="logo">
           <img src="./images/logo.svg" alt="logo" />
           photo
         </a>
-        <ul>
+        <ul class="site-nav">
           <li><a href="./features.html">Features</a></li>
           <li><a href="/">Pricing</a></li>
           <li><a href="/">Community</a></li>
           <li><a href="/">Support</a></li>
-          <li><a href="./wireframes.html">Wireframes</a></li>
         </ul>
-        <ul>
+        <ul class="auth-nav">
           <li><a href="/">Log in</a></li>
           <li><a href="">Register</a></li>
         </ul>
@@ -164,91 +165,6 @@
           <li><a href="/">Contact Us</a></li>
         </ul>
       </section>
-      <!--body вариант ІІ-->
-      <section>
-        <h2>Snap photos and share like never before</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore
-        </p>
-        <ul>
-          <li>
-            <h3>Sed ut perspiciatis</h3>
-            <p>
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-              consequuntur.
-            </p>
-          </li>
-          <li>
-            <h3>Lorem ipsum dolor</h3>
-            <p>
-              Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.
-            </p>
-          </li>
-          <li>
-            <h3>Nemo enim ipsam</h3>
-            <p>
-              Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
-              quisquam est, qui dolorem.
-            </p>
-          </li>
-        </ul>
-        <img src="#" alt="#" />
-      </section>
-      <!--body вариант ІIІ-->
-      <section>
-        <h2>Snap photos and share like<br />never before</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore
-        </p>
-        <ul>
-          <!--div для стилизации-->
-          <li>
-            <img src="#" alt="квадрат" width="686" height="400" />
-            <h3>Sed ut perspiciatis</h3>
-            <p>
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-              consequuntur.
-            </p>
-          </li>
-          <li>
-            <img src="#" alt="квадрат" width="686" height="400" />
-            <h3>Lorem ipsum dolor</h3>
-            <p>
-              Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.
-            </p>
-          </li>
-        </ul>
-      </section>
-      <!--body вариант ІV-->
-      <section>
-        <h2>You’re in good company</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore
-        </p>
-        <ul>
-          <li><img src="" alt="" /></li>
-          <li><img src="" alt="" /></li>
-          <li><img src="" alt="" /></li>
-          <li><img src="" alt="" /></li>
-          <li><img src="" alt="" /></li>
-          <li><img src="" alt="" /></li>
-        </ul>
-        <div>
-          <!-- or <article> вместо div - если это будет независимый елемент страницы-->
-          <img src="" alt="" width="600" />
-          <h3>Sed ut perspiciatis unde omnis</h3>
-          <p>
-            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-            consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
-            quisquam est, qui dolorem ipsum quia dolor sit amet.
-          </p>
-        </div>
-      </section>
     </main>
     <footer>
       <ul>
@@ -265,33 +181,13 @@
         <li><a href="">Blog</a></li>
         <li><a href="">Resources</a></li>
       </ul>
-      <!-- <ul>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-      </ul> -->
       <ul>
-        <li><a href="" aria-label="Facebook link">Facebook</a></li>
-        <li><a href="" aria-label="Twitter link">Twitter</a></li>
-        <li><a href="" aria-label="Instagram link">Instagram</a></li>
-        <li><a href="" aria-label="LinkedIn link">LinkedIn</a></li>
-      </ul>
-      <!-- <ul>
         <li><a href="" aria-label="Facebook link"></a></li>
         <li><a href="" aria-label="Twitter link"></a></li>
         <li><a href="" aria-label="Instagram link"></a></li>
         <li><a href="" aria-label="LinkedIn link"></a></li>
-      </ul> -->
-      <!-- <ul>
-        <li><a href="">Facebook</a></li>
-        <li><a href="">Twitter</a></li>
-        <li><a href="">Instagram</a></li>
-        <li><a href="">LinkedIn</a></li>
-      </ul> -->
+      </ul>
       <p>&#169; Photo, Inc. 2019. We love our users!</p>
-      <!-- <p>&#169; Photo, Inc. 2019. <span class="accent">We love our users!</span></p> -->
     </footer>
   </body>
 </html>
-<!-- &lt table &gt - символьная подстановка "<>"" -->
