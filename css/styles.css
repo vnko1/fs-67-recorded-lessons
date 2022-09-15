@@ -13,12 +13,22 @@
 body {
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
+  font-family: Montserrat /* or "Montserrat" */, sans-serif;
+  letter-spacing: -0.015em;
+  font-size: 18px;
+  line-height: 1.67;
 }
 .list {
   list-style: none;
 }
-
+.link {
+  text-decoration: none;
+}
 .logo {
+  font-family: 'Comfortaa', cursive;
+  font-size: 28px;
+  line-height: 1.14;
+  /* text-decoration: none; list-style: none; - второй вариант, в каждом селекторе для ссылки и списка прописать свойство text-decoration и list-style */
   color: var(--title-text-color);
 }
 .logo:hover,
@@ -27,41 +37,82 @@ body {
 }
 .site-nav .link {
   color: var(--accent-color);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
 }
-
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--title-text-color);
 }
-.hero-title {
-  color: var(--title-text-color);
-}
-.section-title {
-  color: var(--title-text-color);
-}
-.feature-list .title {
-  color: var(--title-text-color);
-}
-/* .feature-list .link {
-  color: var(--accent-color);
-} */
-.work-list .title {
-  var(--title-text-color);
-}
-/* button */
-.button {
-  color: var(--title-text-color);
-  background-color: var(--primary-bg-color);
-}
-.button.primary {
-  background-color: var(--accent-color);
-  color: var(--primary-bg-color)
-}
-.button.secondary {
-  background-color: var(--primary-bg-color);
-  color: var(--accent-color);
-}
 .site-nav .link.current {
   color: var(--title-text-color);
 }
+/* button */
+.button {
+  /* color: var(--title-text-color);
+  background-color: var(--primary-bg-color); */
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
+}
+.button.primary {
+  background-color: var(--primary-bg-color);
+  color: var(--accent-color);
+}
+.button.secondary {
+  background-color: var(--accent-color);
+  color: var(--primary-bg-color);
+}
 
+.hero-title {
+  color: var(--title-text-color);
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 1.43;
+  text-align: center;
+}
+.hero .button {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1.23;
+}
+.section-title {
+  color: var(--title-text-color);
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.feature-list .title,
+.work-list .title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
+}
+/* .feature-list .text {
+  font-size: 18px;
+  line-height: 1.67;
+  color: var(--primary-text-color);
+} */
+/* .feature-list .link {
+  color: var(--accent-color);
+} */
+/* .work-list .title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
+} */
+.clients-description {
+  font-size: 36px;
+  line-height: 1.39;
+  text-align: center;
+}
+.section-description {
+  font-size: 36px;
+  line-height: 1.39;
+}
