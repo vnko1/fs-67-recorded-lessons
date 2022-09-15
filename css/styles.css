@@ -116,3 +116,21 @@ body {
   font-size: 36px;
   line-height: 1.39;
 }
+/* Footer 2 вариант*/
+
+.copyright {
+  font-size: 15px;
+  line-height: 1.6;
+}
+.footer-list h2 {
+  ont-weight: 700;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #000000;
+}
+.footer-list p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.6;
+  color: rgba(0, 0, 0, 0.8);
+}
