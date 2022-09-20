@@ -22,8 +22,9 @@
     <!--css подключается после tag title согласно спецификации-->
   </head>
   <body>
-    <header>
-      <nav>
+    <header class="page-header">
+      <!-- <div class="container"> -->
+      <nav class="container">
         <a href="./index.html" class="logo link">
           <img src="./images/logo.svg" alt="logo" />
           photo
@@ -39,6 +40,7 @@
           <li><a href="/" class="button secondary link">Register</a></li>
         </ul>
       </nav>
+      <!-- </div> -->
     </header>
     <main>
       <div>
@@ -49,139 +51,147 @@
         </section>
       </div>
       <section class="section">
-        <h2 class="section-title">
-          Snap photos and share like <br />
-          never before
-        </h2>
-        <ul class="feature-list list">
-          <li>
-            <h3 class="title">Sed ut perspiciatis</h3>
-            <p class="text">
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-              consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
-              quisquam est.
-            </p>
-            <a href="/" class="button primary link">Learn more</a>
-          </li>
-          <li>
-            <h3 class="title">Lorem ipsum dolor</h3>
-            <p class="text">
-              Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris nisi.
-            </p>
-            <a href="/" class="button primary link">Learn more</a>
-          </li>
-          <li>
-            <h3 class="title">Nemo enim ipsam</h3>
-            <p class="text">
-              <!--class на даному етапі не потрібен, оскільки весь стиль наслідується від <body>-->
-              Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
-              quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
-              quia non numquam.
-            </p>
-            <a href="/" class="button primary link">Learn more</a>
-          </li>
-          <li>
-            <h3 class="title">Tempor incididunt</h3>
-            <p class="text">
-              Eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
-              quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
-              tempora.
-            </p>
-            <a href="/" class="button primary">Learn more</a>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="section-title">
+            Snap photos and share like <br />
+            never before
+          </h2>
+          <ul class="feature-list list">
+            <li>
+              <h3 class="title">Sed ut perspiciatis</h3>
+              <p class="text">
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
+                quisquam est.
+              </p>
+              <a href="/" class="button primary link">Learn more</a>
+            </li>
+            <li>
+              <h3 class="title">Lorem ipsum dolor</h3>
+              <p class="text">
+                Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi.
+              </p>
+              <a href="/" class="button primary link">Learn more</a>
+            </li>
+            <li>
+              <h3 class="title">Nemo enim ipsam</h3>
+              <p class="text">
+                <!--class на даному етапі не потрібен, оскільки весь стиль наслідується від <body>-->
+                Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
+                quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                sed quia non numquam.
+              </p>
+              <a href="/" class="button primary link">Learn more</a>
+            </li>
+            <li>
+              <h3 class="title">Tempor incididunt</h3>
+              <p class="text">
+                Eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
+                ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
+                modi tempora.
+              </p>
+              <a href="/" class="button primary">Learn more</a>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section class="section">
-        <h2 class="section-title">Work examples</h2>
-        <ul class="work-list list">
-          <li>
-            <img src="./images/placeholder.png" alt="work examles" width="750" />
-            <h3 class="title">Sed ut perspiciatis unde omnis</h3>
-            <p>
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-              consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
-              quisquam est, qui dolorem.
-            </p>
-          </li>
-          <li>
-            <img src="./images/placeholder.png" alt="work examles" width="750" />
-            <h3 class="title">Sed ut perspiciatis unde omnis</h3>
-            <p>
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-              consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
-              quisquam est, qui dolorem.
-            </p>
-          </li>
-        </ul>
+      <section class="section no-padding">
+        <div class="container">
+          <h2 class="section-title">Work examples</h2>
+          <ul class="work-list list">
+            <li class="item">
+              <img src="./images/placeholder.png" alt="work examles" width="750" />
+              <h3 class="title">Sed ut perspiciatis unde omnis</h3>
+              <p>
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
+                quisquam est, qui dolorem.
+              </p>
+            </li>
+            <li class="item">
+              <img src="./images/placeholder.png" alt="work examles" width="750" />
+              <h3 class="title">Sed ut perspiciatis unde omnis</h3>
+              <p>
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
+                quisquam est, qui dolorem.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="section clients">
-        <h2 class="section-title">You`re in good company</h2>
-        <p class="clients-description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore
-        </p>
-        <ul class="list">
-          <li>
-            <a href="/" target="_blank" rel="noreferrer noopener nofollow"
-              ><img src="./images/logoplaceholder.svg" alt="logoplaceholder"
-            /></a>
-          </li>
-          <!--Атрибут rel тут використаний бо малюнки-посилання переходять на зовнішні ресурси (сайти клієнтів)-->
-          <li>
-            <a href="/" target="_blank" rel="noreferrer noopener nofollow"
-              ><img src="./images/logoplaceholder.svg" alt="logoplaceholder"
-            /></a>
-          </li>
-          <li>
-            <a href="/" target="_blank" rel="noreferrer noopener nofollow"
-              ><img src="./images/logoplaceholder.svg" alt="logoplaceholder"
-            /></a>
-          </li>
-          <li>
-            <a href="/" target="_blank" rel="noreferrer noopener nofollow"
-              ><img src="./images/logoplaceholder.svg" alt="logoplaceholder"
-            /></a>
-          </li>
-          <li>
-            <a href="/" target="_blank" rel="noreferrer noopener nofollow"
-              ><img src="./images/logoplaceholder.svg" alt="logoplaceholder"
-            /></a>
-          </li>
-          <li>
-            <a href="/" target="_blank" rel="noreferrer noopener nofollow"
-              ><img src="./images/logoplaceholder.svg" alt="logoplaceholder"
-            /></a>
-          </li>
-          <li>
-            <a href="/" target="_blank" rel="noreferrer noopener nofollow"
-              ><img src="./images/logoplaceholder.svg" alt="logoplaceholder"
-            /></a>
-          </li>
-          <li>
-            <a href="/" target="_blank" rel="noreferrer noopener nofollow"
-              ><img src="./images/logoplaceholder.svg" alt="logoplaceholder"
-            /></a>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="section-title">You`re in good company</h2>
+          <p class="clients-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore
+          </p>
+          <ul class="list">
+            <li>
+              <a href="/" target="_blank" rel="noreferrer noopener nofollow"
+                ><img src="./images/logoplaceholder.svg" alt="logoplaceholder"
+              /></a>
+            </li>
+            <!--Атрибут rel тут використаний бо малюнки-посилання переходять на зовнішні ресурси (сайти клієнтів)-->
+            <li>
+              <a href="/" target="_blank" rel="noreferrer noopener nofollow"
+                ><img src="./images/logoplaceholder.svg" alt="logoplaceholder"
+              /></a>
+            </li>
+            <li>
+              <a href="/" target="_blank" rel="noreferrer noopener nofollow"
+                ><img src="./images/logoplaceholder.svg" alt="logoplaceholder"
+              /></a>
+            </li>
+            <li>
+              <a href="/" target="_blank" rel="noreferrer noopener nofollow"
+                ><img src="./images/logoplaceholder.svg" alt="logoplaceholder"
+              /></a>
+            </li>
+            <li>
+              <a href="/" target="_blank" rel="noreferrer noopener nofollow"
+                ><img src="./images/logoplaceholder.svg" alt="logoplaceholder"
+              /></a>
+            </li>
+            <li>
+              <a href="/" target="_blank" rel="noreferrer noopener nofollow"
+                ><img src="./images/logoplaceholder.svg" alt="logoplaceholder"
+              /></a>
+            </li>
+            <li>
+              <a href="/" target="_blank" rel="noreferrer noopener nofollow"
+                ><img src="./images/logoplaceholder.svg" alt="logoplaceholder"
+              /></a>
+            </li>
+            <li>
+              <a href="/" target="_blank" rel="noreferrer noopener nofollow"
+                ><img src="./images/logoplaceholder.svg" alt="logoplaceholder"
+              /></a>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="section">
-        <h2 class="section-title">Sign up</h2>
-        <p class="section-description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore
-        </p>
-        <!-- <div>
+        <div class="container">
+          <h2 class="section-title visually-hidden">Sign up</h2>
+          <p class="section-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore
+          </p>
+          <!-- <div>
           <a href="/" class="button secondary link">Join Today</a>
           <a href="/" class="button primary link">Contact Us</a>
         </div> -->
-        <ul class="list">
-          <!--замість ul можна використовувати div, оскільки тут всього два елементи-->
-          <li><a href="/" class="button secondary link">Join Today</a></li>
-          <!-- # или  пустота в href - єто заглушки, / - єто для локального использования, правильно см. как в лого-->
-          <li><a href="/" class="button primary link">Contact Us</a></li>
-        </ul>
+          <ul class="list">
+            <!--замість ul можна використовувати div, оскільки тут всього два елементи-->
+            <li><a href="/" class="button secondary link">Join Today</a></li>
+            <!-- # или  пустота в href - єто заглушки, / - єто для локального использования, правильно см. как в лого-->
+            <li><a href="/" class="button primary link">Contact Us</a></li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer>
