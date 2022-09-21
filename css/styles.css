@@ -24,6 +24,44 @@
   margin: -1px;
 }
 
+/* .test-container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; - подходит, если уверены, что не пропадет контен, иначе будет дырка!
+}
+
+.flex-element {
+  width: 380px; / calc((100% - 2 * 30px) / 3)
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.flex-element:nth-child(3n) {
+  margin-right: 0;
+}
+
+.flex-element:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.flex-element:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+} 
+
+.flex-element:not(:nth-last-child(-n+3){
+  margin-right: 30px;
+}
+
+*/
+
 body {
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
@@ -54,6 +92,7 @@ p {
 }
 
 .page-header {
+  /* padding-top: 14px; */
   background-color: #ccc;
 }
 .container {
@@ -64,9 +103,18 @@ p {
   padding-right: 20px;
   outline: 2px solid tomato;
 }
-.page-header {
-  /* padding-top: 14px; */
-  /* padding-bottom: 14px; */
+/* .page-header {
+  padding-top: 14px; 
+  padding-bottom: 14px;
+}  */
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.page-header .logo {
+  margin-left: 60px;
 }
 
 .logo {
@@ -82,7 +130,28 @@ p {
 .logo:focus {
   color: var(--accent-color);
 }
+
+.site-nav {
+  display: flex;
+  margin-left: 70px;
+  /* width: 200px; */
+}
+
+.site-nav .item:not(:last-child) {
+  /* outline: 2px solid tomato; */
+  margin-right: 40px;
+}
+
+/* .site-nav .item + .item { селектор соседа, т.е. применяеться ко всему, что после (ниже в коде) соседа (+)
+  margin-left: 40px;
+} */
+
 .site-nav .link {
+  display: block;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  /* margin-top: 21px;
+  margin-bottom: 21px; */
   color: var(--accent-color);
   font-weight: 500;
   font-size: 15px;
@@ -96,7 +165,21 @@ p {
   color: var(--title-text-color);
 }
 
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+  margin-right: 60px;
+}
+
+.auth-nav .item:not(:last-child) {
+  margin-right: 12px;
+}
+/* .auth-nav .item + .item {
+  margin-right: 12px;
+} */
+
 /* button */
+
 .button {
   display: inline-block;
   border-radius: 6px;
@@ -120,6 +203,7 @@ p {
   background-color: var(--accent-color);
   color: var(--primary-bg-color);
 }
+
 .hero {
   text-align: center;
 }
@@ -131,8 +215,9 @@ p {
   font-weight: 400;
   font-size: 56px;
   line-height: 1.43;
-  text-align: center;
+  /* text-align: center; */
 }
+
 .hero .button {
   font-weight: 500;
   font-size: 17px;
@@ -156,7 +241,18 @@ p {
   font-weight: 400;
   font-size: 48px;
   line-height: 1.5;
-  text-align: center;
+}
+
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between;
+  column-gap: 148px;
+  row-gap: 60px; */
+}
+
+.feature-list .item {
+  /* max-width: 560px; */
 }
 
 .feature-list .title,
@@ -205,6 +301,7 @@ p {
 .clients .section-title {
   /* padding-top: 120px; */
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .clients-description {
@@ -212,7 +309,7 @@ p {
   margin-bottom: 80px;
   font-size: 36px;
   line-height: 1.39;
-  /* text-align: center; */
+  text-align: center;
 }
 .section .section-description {
   margin-top: 0;

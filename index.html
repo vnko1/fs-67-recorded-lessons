@@ -22,34 +22,70 @@
     <!--css подключается после tag title согласно спецификации-->
   </head>
   <body>
+    <!-- <div class="test-container">
+      <div class="flex-container">
+        <div class="flex-element">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem ut quo hic, nobis
+          commodi id iste beatae magnam voluptatem odit! Eum, temporibus? Dolorum, repellat sequi
+          qui recusandae esse enim placeat.
+        </div>
+        <div class="flex-element">
+          Tempora, distinctio? Odit, voluptatem! Voluptatum aspernatur neque velit magni natus
+          dolorem, suscipit, est, nihil maxime unde nobis labore totam dolorum cum numquam et aut
+          itaque debitis quasi ducimus rerum. Provident.
+        </div>
+        <div class="flex-element">
+          Nam earum quidem fugiat unde velit exercitationem! Necessitatibus, nobis minima esse
+          temporibus, ipsa facere, minus iure ex optio inventore dignissimos laudantium quam eos
+          eaque asperiores quis consectetur? A, nam dolore.
+        </div>
+        <div class="flex-element">
+          Exercitationem temporibus minima reprehenderit iste laboriosam quod eius blanditiis
+          distinctio in soluta magni ea consequuntur, aperiam vitae quos consectetur provident sed
+          fugiat dolorem esse quas labore porro expedita. Eaque, cumque!
+        </div>
+        <div class="flex-element">
+          Ad hic et eum amet suscipit ducimus. Amet, perferendis voluptatibus impedit distinctio
+          cumque sit necessitatibus saepe, dolores sequi, aliquid nemo voluptatum accusamus harum
+          accusantium enim explicabo. Ea amet numquam consectetur!
+        </div>
+        <div class="flex-element">
+          Dolor, mollitia necessitatibus! Cumque laudantium fugiat modi aut sequi maxime, vitae ea
+          officiis. Aliquam esse perspiciatis excepturi magnam quae commodi repudiandae repellendus,
+          magni facere, nostrum odit libero eum expedita dolore.
+        </div>
+      </div>
+    </div> -->
     <header class="page-header">
       <!-- <div class="container"> -->
-      <nav class="container">
+      <nav class="container main-nav">
         <a href="./index.html" class="logo link">
           <img src="./images/logo.svg" alt="logo" />
           photo
         </a>
         <ul class="site-nav list">
-          <li><a href="./features.html" class="link current">Features</a></li>
-          <li><a href="/" class="link">Pricing</a></li>
-          <li><a href="/community.html" class="link">Community</a></li>
-          <li><a href="/" class="link">Support</a></li>
+          <li class="item">
+            <a href="./features.html" class="link current">Features</a>
+          </li>
+          <li class="item"><a href="/" class="link">Pricing</a></li>
+          <li class="item"><a href="/community.html" class="link">Community</a></li>
+          <li class="item"><a href="/" class="link">Support</a></li>
         </ul>
         <ul class="auth-nav list">
-          <li><a href="/" class="button primary link">Log in</a></li>
-          <li><a href="/" class="button secondary link">Register</a></li>
+          <li class="item"><a href="/" class="button primary link">Log in</a></li>
+          <li class="item"><a href="/" class="button secondary link">Register</a></li>
         </ul>
       </nav>
       <!-- </div> -->
     </header>
     <main>
-      <div>
-        <!--тег div тут використаний для пізнішого оформлення у css, для верстки він не потрібен-->
-        <section class="hero">
-          <h1 class="hero-title">The largest community of photo enthusiasts</h1>
-          <a href="/" class="button secondary link">Join Today</a>
-        </section>
-      </div>
+      <!-- <div> -->
+      <!--тег div тут використаний для пізнішого оформлення у css, для верстки він не потрібен-->
+      <section class="hero">
+        <h1 class="hero-title">The largest community of photo enthusiasts</h1>
+        <a href="/" class="button secondary link">Join Today</a>
+      </section>
+      <!-- </div> -->
       <section class="section">
         <div class="container">
           <h2 class="section-title">
@@ -57,7 +93,7 @@
             never before
           </h2>
           <ul class="feature-list list">
-            <li>
+            <li class="item">
               <h3 class="title">Sed ut perspiciatis</h3>
               <p class="text">
                 Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
@@ -66,7 +102,7 @@
               </p>
               <a href="/" class="button primary link">Learn more</a>
             </li>
-            <li>
+            <li class="item">
               <h3 class="title">Lorem ipsum dolor</h3>
               <p class="text">
                 Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -75,7 +111,7 @@
               </p>
               <a href="/" class="button primary link">Learn more</a>
             </li>
-            <li>
+            <li class="item">
               <h3 class="title">Nemo enim ipsam</h3>
               <p class="text">
                 <!--class на даному етапі не потрібен, оскільки весь стиль наслідується від <body>-->
@@ -85,7 +121,7 @@
               </p>
               <a href="/" class="button primary link">Learn more</a>
             </li>
-            <li>
+            <li class="item">
               <h3 class="title">Tempor incididunt</h3>
               <p class="text">
                 Eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
@@ -99,7 +135,7 @@
       </section>
       <section class="section no-padding">
         <div class="container">
-          <h2 class="section-title">Work examples</h2>
+          <h2 hidden class="section-title">Work examples</h2>
           <ul class="work-list list">
             <li class="item">
               <img src="./images/placeholder.png" alt="work examles" width="750" />
