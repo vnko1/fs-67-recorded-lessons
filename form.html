@@ -7,5 +7,90 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- <form class="js-speaker-form" autocomplete="off"> -->
+    <form class="js-speaker-form" autocomplete="off">
+      <label for="name">Имя </label>
+      <input
+        type="text"
+        name="user-name"
+        id="name"
+        autofocus
+        placeholder="Andrii"
+        autocomplete="name"
+      />
+      <br />
+      <label for="tel">telephone</label>
+      <input type="tel" name="tel" id="tel" autocomplete="off" />
+      <br />
+
+      <label for="mail">mail</label>
+      <input type="email" name="email" id="mail " autocomplete="on" />
+      <br />
+      <!-- <fieldset>
+        <input type="checkbox" name="topic" id="html" />
+        <label for="html">HTML</label>
+        <input type="checkbox" name="topic" id="CSS" />
+        <label for="css">CSS</label>
+        <input type="checkbox" name="topic" id="ja" />
+        <label for="js">JavaScript</label>
+      </fieldset> -->
+      <div role="group">
+        <input type="checkbox" name="topic" value="html" id="html" checked />
+        <label for="html">HTML</label>
+        <input type="checkbox" name="topic" value="css" id="css" checked />
+        <label for="css">CSS</label>
+        <input type="checkbox" name="topic" value="js" id="ja" />
+        <label for="js">JavaScript</label>
+      </div>
+
+      <div role="group">
+        <input
+          type="radio"
+          name="experience"
+          value="junior"
+          id="junior"
+          checked
+        />
+        <label for="junior">junior</label>
+        <input type="radio" name="experience" value="middle" id="middle" />
+        <label for="middle">middle</label>
+        <input type="radio" name="experience" value="middle" id="middle" />
+        <label for="middle">middle</label>
+      </div>
+
+      <input
+        type="datetime-local"
+        name="time"
+        id="time"
+        min="2020-04-11T12:30"
+        max="2020-04-12T12:30"
+      />
+      <label for="time">time</label>
+
+      <label for="pdf">pdf</label>
+      <input type="file" name="pdf" id="pdf" />
+
+      <label for="comment">comments</label>
+      <textarea name="comment" id="comment" rows="10"></textarea>
+
+      <input type="checkbox" name="policy" id="policy" checked />
+      <label for="policy">Confiming</label>
+
+      <button type="submit">Оставить заявку</button>
+    </form>
+    <script>
+      (() => {
+        document
+          .querySelector(".js-speaker-form")
+          .addEventListener("submit", (e) => {
+            e.preventDefault();
+            new FormData(e.currentTarget).forEach(
+              (value, name) => console,
+              log("${name}: ${value}")
+            );
+          });
+      })();
+    </script>
+  </body>
 </html>
