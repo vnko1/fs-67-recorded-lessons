@@ -6,6 +6,83 @@ body {
   display: block;
 } */
 
-textarea {
+/* textarea {
   resize: none;
+} */
+.form {
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-label {
+  margin-bottom: 5px;
+}
+
+.form-input {
+  margin: 0;
+  padding: 10px 20px;
+  border-radius: 3px;
+  border: 1px solid #2a2a2a;
+}
+
+.form-input::placeholder {
+  color: #2a2a2a;
+}
+
+.group {
+  margin-bottom: 20px;
+}
+
+.group-title {
+  margin: 0;
+}
+
+.topic-options-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.topic-options-item {
+  display: flex;
+  align-items: center;
+}
+
+/* [type="checkbox"] */
+
+input[type="checkbox"] {
+  /* width: 40px;
+  height: 40px; */
+}
+
+.topic-options-item label {
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.experience-options-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.form .date {
+  border-color: tomato;
+  border-width: 2px;
+  border-radius: 2px;
+  padding: 20px 40px;
+  font-size: 20px;
+  color: red;
+  background-color: blue;
+}
+
+.comment {
+  padding: 5px;
 }
